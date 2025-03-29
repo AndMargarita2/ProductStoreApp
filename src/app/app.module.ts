@@ -9,6 +9,14 @@ import { ProductsComponent } from './views/products/products.component';
 import { ProductDetailsComponent } from './views/product-details/product-details.component';
 import { AboutComponent } from './views/about/about.component';
 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
+import { MatExpansionModule } from '@angular/material/expansion';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +28,12 @@ import { AboutComponent } from './views/about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule, 
+    MatCardModule,  
+    MatButtonModule,  
+    MatIconModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
